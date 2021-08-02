@@ -2,18 +2,38 @@
 
 Plotly.js plots in typescript Jupyter Notebooks!
 Also works in [Notebooks inside VSCode](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+And the plots are interactive, checkout the (rendered example)[https://htmlpreview.github.io/?https://github.com/dbuezas/tslab-plotly/blob/master/example/notebook.html] and its (source code)[https://github.com/dbuezas/tslab-plotly/blob/master/example/notebook.ipynb]
 
 ## installation
 
 `npm i tslab-plotly`
 
+## Usage
 
+```typescript
+import Plotly from "tslab-plot";
+import * as tslab from "tslab";
+
+Plotly.newPlot(tslab, [
+  {
+    x: [1, 2, 3, 4, 5],
+    y: [1, 2, 4, 8, 16],
+  },
+]);
+```
 
 ![alt text](./screenshot.png "Screenshot")
 
+## API
+
+The API exposed is exactly the same as that of [plotly.js](https://plotly.com/javascript/), except that the first argument is `tslab` instead of the id of the HTML container element.
+
+See example plots in [https://plotly.com/javascript/](https://plotly.com/javascript/).
+
 ## Requirements
 
-Obviously node, npm and typescript.
+Obviously [node](https://nodejs.org/), [npm](https://www.npmjs.com/) and [typescript](https://www.npmjs.com/package/typescript).
+And the Jupyter lab environment:
 
 #### Option 1
 
@@ -31,29 +51,6 @@ Obviously node, npm and typescript.
 - [TSLab](https://github.com/yunabe/tslab)
 - [vscode](https://code.visualstudio.com/)
 - [vscode-jupyter extension](https://github.com/Microsoft/vscode-jupyter)
-
-## Usage
-
-1. Run `npm i tslab-plotly` in the folder containing your notebook
-2. Plot your plots. E.g:
-
-```typescript
-import Plotly from "tslab-plot";
-import * as tslab from "tslab";
-
-Plotly.newPlot(tslab, [
-  {
-    x: [1, 2, 3, 4, 5],
-    y: [1, 2, 4, 8, 16],
-  },
-]);
-```
-
-## API
-
-The API exposed is exactly the same as that of [plotly.js](https://plotly.com/javascript/), except that the first argument is `tslab` instead of the id of the HTML container element.
-
-See example plots in [https://plotly.com/javascript/](https://plotly.com/javascript/).
 
 ## How it works
 
