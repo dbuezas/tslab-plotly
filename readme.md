@@ -1,11 +1,13 @@
 # tslab-plotly
 
+Plotly.js plots in typescript Jupyter Notebooks!
+Also works in [Notebooks inside VSCode](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+
 ## installation
 
 `npm i tslab-plotly`
 
-Plotly.js plots in typescript Jupyter Notebooks!
-Also works in [Notebooks inside VSCode](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+
 
 ![alt text](./screenshot.png "Screenshot")
 
