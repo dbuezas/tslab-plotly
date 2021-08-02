@@ -1,8 +1,10 @@
 # tslab-plotly
 
 Plotly.js plots in typescript Jupyter Notebooks!
+
 Also works in [Notebooks inside VSCode](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
-And the plots are interactive, checkout the (rendered example)[https://htmlpreview.github.io/?https://github.com/dbuezas/tslab-plotly/blob/master/example/notebook.html] and its (source code)[https://github.com/dbuezas/tslab-plotly/blob/master/example/notebook.ipynb]
+
+And the plots are interactive, checkout the [rendered example](https://htmlpreview.github.io/?https://github.com/dbuezas/tslab-plotly/blob/master/example/notebook.html) and its [source code](https://github.com/dbuezas/tslab-plotly/blob/master/example/notebook.ipynb)
 
 ## installation
 
