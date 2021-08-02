@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "tslab-plotly": "^1.0.0"
+    "tslab-plotly": "^2.0.0"
   }
 }
