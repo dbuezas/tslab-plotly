@@ -1,0 +1,28 @@
+{
+  "name": "tslab-plotly",
+  "version": "1.0.0",
+  "keywords": [
+    "tslab",
+    "jupyter",
+    "typescript",
+    "notebook",
+    "plotly",
+    "plotly.js",
+    "charts",
+    "plot"
+  ],
+  "author": "david.buezas@gmail.com",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "link": "npm unlink && npm link",
+    "prepublish": "npm run build",
+    "postversion": "git push --follow-tags && npm publish"
+  },
+  "dependencies": {
+    "@types/plotly.js": "^1.54.13",
+    "tslab": "^1.0.15"
+  }
+}
