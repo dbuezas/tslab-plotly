@@ -13974,7 +13974,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-typescript"><pre><span></span><span class="k">import</span> <span class="p">{</span> <span class="nx">newPlot</span> <span class="p">}</span> <span class="k">from</span> <span class="s2">&quot;tslab-plotly&quot;</span><span class="p">;</span>
+<div class=" highlight hl-typescript"><pre><span></span><span class="k">import</span> <span class="nx">Plotly</span> <span class="k">from</span> <span class="s2">&quot;tslab-plotly&quot;</span><span class="p">;</span>
 
 <span class="k">import</span> <span class="o">*</span> <span class="kr">as</span> <span class="nx">tslab</span> <span class="k">from</span> <span class="s2">&quot;tslab&quot;</span><span class="p">;</span>
 <span class="kd">const</span> <span class="nx">zs</span> <span class="o">=</span> <span class="p">[];</span>
@@ -13986,7 +13986,7 @@ a.anchor-link {
     <span class="nx">row</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">z</span><span class="p">);</span>
   <span class="p">}</span>
 <span class="p">}</span>
-<span class="nx">newPlot</span><span class="p">(</span>
+<span class="nx">Plotly</span><span class="p">.</span><span class="nx">newPlot</span><span class="p">(</span>
   <span class="nx">tslab</span><span class="p">,</span>
   <span class="p">[</span>
     <span class="p">{</span>
@@ -14069,10 +14069,10 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-typescript"><pre><span></span><span class="k">import</span> <span class="p">{</span> <span class="nx">newPlot</span> <span class="p">}</span> <span class="k">from</span> <span class="s2">&quot;tslab-plotly&quot;</span><span class="p">;</span>
+<div class=" highlight hl-typescript"><pre><span></span><span class="k">import</span> <span class="nx">Plotly</span> <span class="k">from</span> <span class="s2">&quot;tslab-plotly&quot;</span><span class="p">;</span>
 <span class="k">import</span> <span class="o">*</span> <span class="kr">as</span> <span class="nx">tslab</span> <span class="k">from</span> <span class="s2">&quot;tslab&quot;</span><span class="p">;</span>
 
-<span class="nx">newPlot</span><span class="p">(</span><span class="nx">tslab</span><span class="p">,</span> <span class="p">[</span>
+<span class="nx">Plotly</span><span class="p">.</span><span class="nx">newPlot</span><span class="p">(</span><span class="nx">tslab</span><span class="p">,</span> <span class="p">[</span>
   <span class="p">{</span>
     <span class="nx">x</span><span class="o">:</span> <span class="p">[</span><span class="mf">1</span><span class="p">,</span> <span class="mf">2</span><span class="p">,</span> <span class="mf">3</span><span class="p">,</span> <span class="mf">4</span><span class="p">,</span> <span class="mf">5</span><span class="p">],</span>
     <span class="nx">y</span><span class="o">:</span> <span class="p">[</span><span class="mf">1</span><span class="p">,</span> <span class="mf">2</span><span class="p">,</span> <span class="mf">4</span><span class="p">,</span> <span class="mf">8</span><span class="p">,</span> <span class="mf">16</span><span class="p">],</span>
@@ -14141,18 +14141,94 @@ a.anchor-link {
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-typescript"><pre><span></span>
+<div class=" highlight hl-typescript"><pre><span></span><span class="k">import</span> <span class="nx">Plotly</span> <span class="k">from</span> <span class="s2">&quot;tslab-plotly&quot;</span><span class="p">;</span>
+<span class="k">import</span> <span class="o">*</span> <span class="kr">as</span> <span class="nx">tslab</span> <span class="k">from</span> <span class="s2">&quot;tslab&quot;</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">layout</span> <span class="o">=</span> <span class="nx">Plotly</span><span class="p">.</span><span class="nx">newPlot</span><span class="p">(</span>
+  <span class="nx">tslab</span><span class="p">,</span>
+  <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nx">z</span><span class="o">:</span> <span class="p">[</span>
+        <span class="p">[</span><span class="mf">10</span><span class="p">,</span> <span class="mf">10.625</span><span class="p">,</span> <span class="mf">12.5</span><span class="p">,</span> <span class="mf">15.625</span><span class="p">,</span> <span class="mf">20</span><span class="p">],</span>
+        <span class="p">[</span><span class="mf">5.625</span><span class="p">,</span> <span class="mf">6.25</span><span class="p">,</span> <span class="mf">8.125</span><span class="p">,</span> <span class="mf">11.25</span><span class="p">,</span> <span class="mf">15.625</span><span class="p">],</span>
+        <span class="p">[</span><span class="mf">2.5</span><span class="p">,</span> <span class="mf">3.125</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mf">8.125</span><span class="p">,</span> <span class="mf">12.5</span><span class="p">],</span>
+        <span class="p">[</span><span class="mf">0.625</span><span class="p">,</span> <span class="mf">1.25</span><span class="p">,</span> <span class="mf">3.125</span><span class="p">,</span> <span class="mf">6.25</span><span class="p">,</span> <span class="mf">10.625</span><span class="p">],</span>
+        <span class="p">[</span><span class="mf">0</span><span class="p">,</span> <span class="mf">0.625</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span> <span class="mf">5.625</span><span class="p">,</span> <span class="mf">10</span><span class="p">],</span>
+      <span class="p">],</span>
+      <span class="kd">type</span><span class="o">:</span> <span class="s2">&quot;contour&quot;</span><span class="p">,</span>
+    <span class="p">},</span>
+  <span class="p">],</span>
+  <span class="p">{</span>
+    <span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;Basic Contour Plot&quot;</span><span class="p">,</span>
+  <span class="p">}</span>
+<span class="p">);</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
+
+    <div
+      id="_plotly-davnfew34ejy"
+      style="width:600px;height:600px;">
+    </div>
+    <div
+      id="_plotly-davnfew34ejy__"
+    </div>
+    <script>
+      if (!window.__PlotlyPromise){
+        window.__PlotlyPromise = fetch('https://cdn.plot.ly/plotly-latest.min.js')
+        .then(response => response.text().then(script => {
+          // define = undefined so that requirejs doesn't interfere in vscode
+          eval('{var define = undefined;'+script+'}');
+          return window.Plotly;
+        }))
+      }
+      {
+        const plotId = "_plotly-davnfew34ejy";
+
+        const plotContainer = document.getElementById("_plotly-davnfew34ejy")
+        const countEl = document.getElementById("_plotly-davnfew34ejy__")
+        window.__PlotlyPromise.then(Plotly => {
+          countEl.innerText = (countEl.innerText||0)+1
+            const args = [[{"z":[[10,10.625,12.5,15.625,20],[5.625,6.25,8.125,11.25,15.625],[2.5,3.125,5,8.125,12.5],[0.625,1.25,3.125,6.25,10.625],[0,0.625,2.5,5.625,10]],"type":"contour"}],{"margin":{"l":50,"r":50,"b":25,"t":50},"width":600,"height":600,"title":"Basic Contour Plot"},null];
+            ((container, data, layout) => {
+    return Plotly.newPlot(container, data, layout);
+})(plotContainer,...args)
+        }).catch(e => {
+          plotContainer.innerText = e.message + '\n' + e.stack
+        })
+
+      }  
+    </script>
+    
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>

@@ -4,7 +4,7 @@ declare var Plotly: typeof import('plotly.js');
 
 type Tslab = typeof import('tslab')
 
-export default function plot(
+function plot(
   tslab: Tslab,
   plotfn: Function,
   data: Plotly.Data[],
@@ -66,4 +66,4 @@ const newPlot = (
   config?: Partial<Plotly.Config>
 ) => plot(tslab, plotfn, data, layout, config);
 
-export { newPlot };
+export default { newPlot };
