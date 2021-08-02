@@ -24,7 +24,7 @@ Plotly.newPlot(tslab, [
 ]);
 ```
 
-![alt text](./screenshot.png "Screenshot")
+![alt text](https://github.com/dbuezas/tslab-plotly/blob/master/screenshot.png "Screenshot")
 
 ## API
 
