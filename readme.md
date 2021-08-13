@@ -13,7 +13,7 @@ And the plots are interactive, checkout the [example in notebook viewer](https:/
 ## Usage
 
 ```typescript
-import Plotly from "tslab-plot";
+import Plotly from "tslab-plotly";
 import * as tslab from "tslab";
 
 Plotly.newPlot(tslab, [
