@@ -12,6 +12,8 @@
     "plot"
   ],
   "author": "david.buezas@gmail.com",
+  "homepage": "https://github.com/dbuezas/tslab-plotly",
+  "bugs": "https://github.com/dbuezas/tslab-plotly/issues",
   "types": "./dist/index.d.ts",
   "main": "./dist/index.js",
   "scripts": {

@@ -16,19 +16,24 @@ And the plots are interactive, checkout the [example in notebook viewer](https:/
 import Plotly from "tslab-plotly";
 import * as tslab from "tslab";
 
-Plotly.newPlot(tslab, [
-  {
-    x: [1, 2, 3, 4, 5],
-    y: [1, 2, 4, 8, 16],
-  },
-]);
+const trace1: Plotly.Data = {
+  x: [1, 2, 3, 4, 5],
+  y: [1, 2, 4, 8, 16],
+};
+
+const data = [trace1];
+
+Plotly.newPlot(tslab, data);
 ```
+
+Also remember to type the traces with `Plotly.Data` to avoid typescript errors (see example in _Usage_)
 
 ![alt text](https://github.com/dbuezas/tslab-plotly/blob/master/screenshot.png "Screenshot")
 
 ## API
 
 The API exposed is exactly the same as that of [plotly.js](https://plotly.com/javascript/), except that the first argument is `tslab` instead of the id of the HTML container element.
+Also remember to type the traces with `Plotly.Data` to avoid typescript errors (see example in _Usage_)
 
 See example plots in [https://plotly.com/javascript/](https://plotly.com/javascript/).
 
