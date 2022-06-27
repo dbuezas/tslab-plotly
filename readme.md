@@ -49,11 +49,6 @@ And the Jupyter lab environment:
 
 #### Option 2
 
-- [vscode](https://code.visualstudio.com/)
-- [typescript-notebook extension](https://github.com/DonJayamanne/typescript-notebook)
-
-#### Option 3
-
 - [Jupyter lab](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html)
 - [TSLab](https://github.com/yunabe/tslab)
 - [vscode](https://code.visualstudio.com/)
